@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Skillstest</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/originals/07/20/0d/07200dedc6438b4209cc6ca1489deb5e.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.737); width: 550px; height: 560px; padding: 50px; border-radius: 15px;">
+
+        <form>
+
+            <div class="row">
+                <center>
+                 <img src="https://i.pinimg.com/1200x/28/16/5a/28165aaca2ee560b4a6b760765efe976.jpg"  style="width: 50px; height: 50px; border-radius: 100px;">
+                </center>
+                <h1 style="color: rgb(131, 44, 157); text-align: center;"><b>Login</b></h1>
+                <p style="color: rgb(192, 112, 216); text-align: center;">Welcome back!</p>
+            </div>
+
+            <div class="row">
+                <label for="uname" style="background-color: rgb(172, 123, 241); color: white; width: auto; border-radius: 10px;"><b>Username</b></label>
+                <input id="uname" type="text" placeholder="Enter your username..." class="form-control" style="width: 500px;" required> 
+            </div>
+
+            <br>
+
+            <div class="row">
+                <label for="password" style="background-color: rgb(172, 123, 241); color: white; width: auto; border-radius: 10px;"><b>Password</b></label>
+                <input id="pass" type="password" placeholder="Enter your password..." class="form-control" style="width: 500px;" required>
+            </div>
+
+            <br>
+
+            <div class="">
+                <input type="checkbox" class="form-check-input" id="check" name="confirm" value="yes">
+
+                <label class="form-check-label" for="check">Remember Me</label>
+                <p style="color: rgb(172, 123, 241); text-align: left;"><i>Your session will stay active on this device.</i></p>
+            </div>
+
+            <div>
+                <p id="display" style="color: plum; text-align:center;"><i>...</i></p>
+            </div>
+
+            <div class="d-grid gap-3">
+                <div class="row">   
+                    <div class="col">
+                        <center>
+                            <input type="button" class="btn btn-sm" value="Login" style="background-color: plum; color: white; width: 50px;" onclick="loginNow()">
+
+                            <input class="btn btn-sm" type="reset" value="Cancel" style="background-color: plum; color: white;">
+                        </center>
+                    </div>
+                </div>
+            </div>
+           
+        </form>
+
+        <div class="row">
+            <p style="color: rgb(163, 72, 163); text-align: center;"><i><u>Forgot username / password?</u></i></p>
+        </div>
+
+    </div>
+
+    <script>
+        let attempt_counter = 0; //counts how many times the user tried to login.
+
+
+        function loginNow(){
+            let username = document.getElementById("uname").value;
+            let pass = document.getElementById("pass").value;
+            let granted = "Welcome " + username + "!";
+            let denied = "Uh oh! Access denied! Account locked after 3 attempts!";
+        
+
+        while (attempt_counter < 3) 
+
+        if (username === "rainglow10" && pass === "penguin") {
+            alert(granted);
+            attempt_counter = 0; // reset attempts after successful login
+            document.getElementById("display").innerHTML = "";
+            window.location.href = "index.html";
+
+
+            break; // stop loop
+        }
+
+
+         else {
+             attempt_counter++;
+             document.getElementById("display").innerHTML =
+                "Incorrect username and/or password. Attempt " + attempt_counter + " of 3 ";
+             break; // stop loop for this click
+            }
+
+        if (attempt_counter >= 3) {
+                alert(denied);
+                document.getElementById("loginNow").disabled = true; // disable button
+        } 
+
+        }
+        
+    </script>
+
+</body>
+</html>
