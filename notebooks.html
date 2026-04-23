@@ -9,93 +9,171 @@
 
     <style>
         body{
-            background-image: url('https://i.pinimg.com/originals/07/20/0d/07200dedc6438b4209cc6ca1489deb5e.gif');
+            background-image: url('https://marketplace.canva.com/EAGK_VGJ-wk/1/0/1600w/canva-purple-illustrative-lavender-desktop-wallpaper-IJjKe9JIOeM.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding-top: 45px;
-            padding-bottom: 45px;
+            display: flex;
         }
 
         .sidenav {
-            height: 900px;
-            width: 250px;
-         
-            top: 0;
-            left: 2;
-            background-color: rgb(233, 210, 233);
-            padding-top: 20px;
+            height: 595px;
+            padding-left: 10px;
+            padding-top: 10px;
+            
         }
 
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 25px;
-          
-        }
-
-        .sidenav a:hover {
-            color: #ffffff;
+        #main{
+            padding: auto;
         }
 
     </style>
 </head>
 
-<body>
+    <body>
 
-     <nav class="sidenav" style="background-color: plum; color: white;">
         <div class="container-fluid">
+            <div class="row">
 
-            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6Xi6tuBsCF_7AGa_jA9j4_ikJYkvhJQz6A&s" width="50px" height="50px"style="border-radius: 50px"> </a>
+                <div class="col-2" id="sidenav" style="background-color: rgba(221, 160, 221, 0.797);">
 
+                    <img src="https://thumbs.dreamstime.com/b/cartoon-penguin-holding-notebook-flat-358254951.jpg" style="width: 70px; height: 70px; border-radius: 100px; align-items: center;">
 
-        <div class="collapse sidenav-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
+                    <ul class="nav flex-column">
 
-                <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="page1.html" >Home</a>
-                </li>
+                        <h2 style="color: rgb(255, 255, 255); align-items: center;"><b>Dashboard Menu</b></h2>
+                        <a href="#vn" style="color: #b943d3;">Virtual Notebooks</a>
+                        <a href="#tasks" style="color: #b943d3;">Tasks</a>
+                        <a href="#profile" style="color: #b943d3;">Profile</a>
 
-                <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="page2.html">Fare Matrix</a>
-                </li>
+                        <br>
 
-                <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="page3.html">Schedule</a>
-                </li>
+                        <a href="#logout" style="color: #ffffff;" id="LogOut">Logout ➜]</a>
+                    </ul>
 
-                <li class="nav-item">
-                <a class="nav-link" style="color: white;" href="page4.html">Help</a>
-                </li>
-
-            </ul>
-
-            <form class="d-flex">
-                  <a class="nav-link" href="page6.html" style="background-color: rgb(182, 205, 236); color: white; border-radius: 50px;text-align: center; width: 200px; height: 30px;">Create Account</a>
-            </form>
-
-        </div>
-     </div>
-</nav>
-
-
-        <div class="container justify-content-center align-items-center">
-         
-            <div class="row gap-4">
-                <div class="col">
-                    <h2><b>NOTEBOOKS</b></h2>
                 </div>
-                <div class="col">
-                    <h2><b>NOTEBOOKS</b></h2>
+
+                <div class="col-10" id="main">
+                    <h2 style="color:#ffffff; background-color: plum;"><b>Notebooks</b></h2>
+                    <br>
+                    <p style="color: #b943d3;">Select a subject.</p>
+
+                    <br><br>
+
+                    <div class="row gap-4">
+
+                        <div class="col" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 100px; height: 50px; border-radius: 10px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Science</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Ms. Mendaro</p>
+
+                        </div>
+
+                        <br>
+
+                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 100px; height: 50px; border-radius: 10px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>English</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Ms. Avila</p>
+
+                        </div>
+
+                        <br>
+
+                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Math</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Mr. Verba</p>
+
+                        </div>
+
+                    </div>
+
+                    <br><br>
+
+                    <div class="row gap-4">
+
+                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Filipino</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Ms. Francisco</p>
+
+                        </div>
+
+                        <br>
+
+                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>TLE</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Mrs. Del Barrio</p>
+
+                        </div>
+
+                        <br>
+
+                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
+
+                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
+                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Social Studies</b></h2>
+                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                            <br><br>
+
+                            <p>Mr. Reynoso</p>
+
+                        </div>
+
+                    </div>
+                    
                 </div>
-                <div class="col">
-                    <h2><b>NOTEBOOKS</b></h2>
-                </div>
+
             </div>
-
         </div>
 
-</body>
+        <script>
+            //logout
+
+            function logOut() {
+             let confirmLogout = confirm("Exit now?"); //confirm() has 2 options : ok (True) and cancel(False)
+            
+                if (confirmLogout) { //if ok or True
+                window.location.href = "index.html"; //load page
+                }
+            } 
+
+            function message(){
+                alert("Not available at this time.");
+            }
+
+        </script>
+
+
+    </body>
 </html>
         
 
