@@ -9,22 +9,34 @@
 
     <style>
         body{
-            background-image: url('https://marketplace.canva.com/EAGK_VGJ-wk/1/0/1600w/canva-purple-illustrative-lavender-desktop-wallpaper-IJjKe9JIOeM.jpg');
+            background-image: url('https://i.pinimg.com/originals/07/20/0d/07200dedc6438b4209cc6ca1489deb5e.gif');
             background-repeat: no-repeat;
             background-size: cover;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             display: flex;
         }
 
-        .sidenav {
-            height: 595px;
+        #sidenav {
+            height: 130vh;
+            width: 250px;
             padding-left: 10px;
             padding-top: 10px;
             
         }
 
         #main{
-            padding: auto;
+            margin-bottom: 50px;
+        }
+
+        #footer{
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            right: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center; 
+            background-color: rgba(232, 173, 232, 0.61);
+            color: white;
         }
 
     </style>
@@ -35,130 +47,154 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-2" id="sidenav" style="background-color: rgba(221, 160, 221, 0.797);">
+                <div class="col-2" id="sidenav" style="background-color: rgba(255, 255, 255, 0.737);">
 
-                    <img src="https://thumbs.dreamstime.com/b/cartoon-penguin-holding-notebook-flat-358254951.jpg" style="width: 70px; height: 70px; border-radius: 100px; align-items: center;">
+                    <img src="https://static1.squarespace.com/static/664c7ae50eea9c731b37e817/t/66a84103b86799259e31ff25/1722302723941/Header.png?format=1500w" style="width: 220px; height: 80px;">
+
+                    <br><br>
 
                     <ul class="nav flex-column">
 
-                        <h2 style="color: rgb(255, 255, 255); align-items: center;"><b>Dashboard Menu</b></h2>
-                        <a href="#vn" style="color: #b943d3;">Virtual Notebooks</a>
-                        <a href="#tasks" style="color: #b943d3;">Tasks</a>
-                        <a href="#profile" style="color: #b943d3;">Profile</a>
+                        <h2 style="color: rgb(131, 44, 157); text-align: center;"><b>Dashboard Menu</b></h2>
+                        <a href="#vn" style="color: rgb(192, 112, 216); text-align: left;">Virtual Notebooks</a>
+                        <a href="#tasks" style="color: rgb(192, 112, 216); text-align: left;">Tasks</a>
+                        <a href="#profile" style="color: rgb(192, 112, 216); text-align: left;">Profile</a>
 
-                        <br>
+                        <br><br>
 
-                        <a href="#logout" style="color: #ffffff;" id="LogOut">Logout ➜]</a>
+                        <a href="#logout" type="button" class="btn btn-sm" style="background-color: plum; color: white; width: 100px;" onclick="LogOut()">Logout ➜]</a>
+
                     </ul>
 
                 </div>
-
-                <div class="col-10" id="main">
-                    <h2 style="color:#ffffff; background-color: plum;"><b>Notebooks</b></h2>
-                    <br>
-                    <p style="color: #b943d3;">Select a subject.</p>
-
-                    <br><br>
-
-                    <div class="row gap-4">
-
-                        <div class="col" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 100px; height: 55px; border-radius: 10px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Science</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Ms. Mendaro</p>
-
-                        </div>
-
-                        <br>
-
-                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 100px; height: 50px; border-radius: 10px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>English</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Ms. Avila</p>
-
-                        </div>
-
-                        <br>
-
-                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Math</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Mr. Verba</p>
-
-                        </div>
-
-                    </div>
-
-                    <br><br>
-
-                    <div class="row gap-4">
-
-                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Filipino</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Ms. Francisco</p>
-
-                        </div>
-
-                        <br>
-
-                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>TLE</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Mrs. Del Barrio</p>
-
-                        </div>
-
-                        <br>
-
-                        <div class="col" id="subjectbox" style="background-color: #eeb1fc71;">
-
-                            <img src="https://i.pinimg.com/236x/d4/76/ca/d476cae39d172fff9ab98fd2a81dbdfc.jpg" style="width: 150px; height: 50px; border-radius: 5px; align-items: center;">
-                            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Social Studies</b></h2>
-                            <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
-
-                            <br><br>
-
-                            <p>Mr. Reynoso</p>
-
-                        </div>
-
-                    </div>
+            </div>
+        </div>
+        
+        <div class="col-10" id="main">
                     
+            <h2 style="color:#ffffff; background-color: plum;"><b>Notebooks</b></h2>
+            <p style="color: #ffffff;">Select a subject.</p>
+                    
+
+            <br>
+
+            <div class="row gap-4">
+
+                <div class="col" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+
+                    <img src="https://thumbs.dreamstime.com/b/minimalist-test-tube-beaker-continuous-line-drawing-simple-science-outline-isolated-vector-art-minimalist-test-tube-beaker-435703334.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                    <br><br>
+
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Science</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Ms. Mendaro</p>
+
+                </div>
+
+                <br>
+
+                <div class="col" id="subjectbox" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+
+                    <img src="https://thumbs.dreamstime.com/b/vector-continuous-line-drawing-book-educational-idea-concept-minimalist-design-study-icon-business-knowledge-learning-linear-158075453.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                    <br><br>
+
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>English</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Ms. Avila</p>
+
+                </div>
+
+                <br>
+
+                <div class="col" id="subjectbox" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+
+                    <img src="https://thumbs.dreamstime.com/b/continuous-one-line-drawing-minimalist-style-isolate-outline-percent-icon-percent-icon-continuous-one-line-drawing-minimalist-434704207.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                    <br><br>
+
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Math</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Mr. Verba</p>
+
                 </div>
 
             </div>
+
+            <br><br>
+
+            <div class="row gap-4">
+
+                <div class="col" id="subjectbox" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+
+                            
+                    <img src="https://img.freepik.com/premium-vector/book-one-line-continuous-outline-vector-art-drawing-simple-minimalist-design_952091-822.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                    <br><br>
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Filipino</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Ms. Francisco</p>
+
+                </div>
+
+                <br>
+
+                <div class="col" id="subjectbox" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+
+                            
+                    <img src="https://thumbs.dreamstime.com/b/continuous-line-drawing-simple-style-outline-minimalist-cooking-pan-minimalist-cooking-pan-continuous-line-drawing-simple-style-431495795.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                    <br><br>
+
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>TLE</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Mrs. Del Barrio</p>
+
+                </div>
+
+                <br>
+
+                <div class="col" id="subjectbox" style="background-color: #ffffff71; height: 50vh; width: 0px;">
+                            
+                    <img src="https://img.freepik.com/premium-vector/book-one-line-continuous-outline-vector-art-drawing-simple-minimalist-design_952091-841.jpg" style="width: 150px; height: 90px; border-radius: 10px;">
+
+                     <br><br>
+
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: grey;"><b>Social Studies</b></h2>
+                    <p style="color: #ffffff;">9 - Emerald 2025 - 2026</p>
+
+                    <br><br>
+
+                    <p>Mr. Reynoso</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p> ©2026 ┃ Created by Shari Cruz, 9 - Emerald </p>
         </div>
 
         <script>
             //logout
 
-            function logOut() {
+            function LogOut() {
              let confirmLogout = confirm("Exit now?"); //confirm() has 2 options : ok (True) and cancel(False)
             
                 if (confirmLogout) { //if ok or True
@@ -175,5 +211,3 @@
 
     </body>
 </html>
-        
-
